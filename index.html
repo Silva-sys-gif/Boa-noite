@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Boa Noite ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#ff4d6d,#ff8fa3,#ffe5ec);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.card{
+    width:100%;
+    max-width:700px;
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    text-align:center;
+}
+
+h1{
+    color:#e63946;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#444;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:20px;
+    color:#555;
+    margin:8px 0;
+}
+
+.lista{
+    margin-top:25px;
+    text-align:left;
+    max-height:500px;
+    overflow:auto;
+    padding-right:10px;
+}
+
+.item{
+    background:#fff0f3;
+    margin:8px 0;
+    padding:10px 15px;
+    border-radius:12px;
+    font-size:18px;
+    color:#c9184a;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:25px;
+    font-size:26px;
+    color:#e63946;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🌙 Boa Noite 🌙</h1>
+
+<h2>Durmam com Deus</h2>
+
+<p>Até amanhã ❤️</p>
+
+<div class="lista" id="lista"></div>
+
+<footer>
+❤️ Amo vocês infinitamente ❤️
+</footer>
+
+</div>
+
+<script>
+const lista = document.getElementById("lista");
+
+for(let i=1;i<=100;i++){
+    const div=document.createElement("div");
+    div.className="item";
+    div.textContent=`❤️ Amo vcs ❤️ ${i}%`;
+    lista.appendChild(div);
+}
+</script>
+
+</body>
+</html>
