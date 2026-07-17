@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(-45deg,#ff6b81,#ff8fab,#ffd6e0,#fff5f8);
+    background-size:400% 400%;
+    animation:fundo 12s ease infinite;
+    overflow-x:hidden;
+    color:white;
+}
+
+@keyframes fundo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+header h1{
+    font-size:50px;
+    text-shadow:0 0 20px rgba(255,255,255,.7);
+    animation:aparecer 2s;
+}
+
+header p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+section{
+    width:90%;
+    max-width:900px;
+    margin:80px auto;
+}
+
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:25px;
+    margin-bottom:60px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    border-radius:20px;
+}
+
+.card h2{
+    margin-top:20px;
+    font-size:32px;
+}
+
+.card p{
+    margin-top:15px;
+    font-size:22px;
+    line-height:35px;
+}
+
+.lista{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.item{
+    background:white;
+    color:#ff2e63;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    text-align:center;
+    padding:100px 20px;
+    font-size:30px;
+}
+
+.coracao{
+    position:fixed;
+    top:-30px;
+    font-size:30px;
+    animation:cair linear infinite;
+    opacity:.7;
+}
+
+@keyframes cair{
+    to{
+        transform:translateY(120vh) rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius:20px;
+}
