@@ -136,3 +136,152 @@ footer{
     background:white;
     border-radius:20px;
 }
+/* ============================
+        PÉTALAS
+============================ */
+
+.petala{
+
+position:fixed;
+
+top:-50px;
+
+font-size:25px;
+
+pointer-events:none;
+
+animation:cairPetala linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes cairPetala{
+
+0%{
+
+transform:translateY(-10vh) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(120vh) rotate(720deg);
+
+}
+
+}
+
+/* ============================
+      ESTRELAS
+============================ */
+
+.estrela{
+
+position:fixed;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:piscar 2s infinite;
+
+box-shadow:0 0 10px white;
+
+}
+
+@keyframes piscar{
+
+0%{
+
+opacity:.2;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:.2;
+
+}
+
+}
+
+/* ============================
+      CURSOR
+============================ */
+
+body{
+
+cursor:url("https://cur.cursors-4u.net/symbols/sym-1/sym46.cur"),auto;
+
+}
+
+/* ============================
+      POLAROID
+============================ */
+
+.polaroid{
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+transition:.5s;
+
+}
+
+.polaroid:hover{
+
+transform:rotate(-2deg) scale(1.04);
+
+}
+
+/* ============================
+      BOTÃO SURPRESA
+============================ */
+
+#surpresa{
+
+display:block;
+
+margin:80px auto;
+
+padding:20px 40px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:22px;
+
+background:#ff3d7f;
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+#surpresa:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 30px pink;
+
+}
