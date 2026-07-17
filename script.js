@@ -213,3 +213,68 @@ behavior:"smooth"
 });
 
 };
+// ============================
+// PÉTALAS
+// ============================
+
+function criarPetala(){
+
+const p=document.createElement("div");
+
+p.className="petala";
+
+p.innerHTML="🌸";
+
+p.style.left=Math.random()*100+"vw";
+
+p.style.animationDuration=(Math.random()*5+6)+"s";
+
+p.style.fontSize=(Math.random()*20+18)+"px";
+
+document.body.appendChild(p);
+
+setTimeout(()=>{
+
+p.remove();
+
+},11000);
+
+}
+
+setInterval(criarPetala,350);
+
+// ============================
+// ESTRELAS
+// ============================
+
+for(let i=0;i<120;i++){
+
+const estrela=document.createElement("div");
+
+estrela.className="estrela";
+
+estrela.style.left=Math.random()*100+"vw";
+
+estrela.style.top=Math.random()*100+"vh";
+
+estrela.style.animationDelay=Math.random()*2+"s";
+
+document.body.appendChild(estrela);
+
+}
+
+// ============================
+// BOTÃO SURPRESA
+// ============================
+
+const surpresa=document.getElementById("surpresa");
+
+if(surpresa){
+
+surpresa.onclick=()=>{
+
+alert("❤️ Você é o maior presente que Deus colocou na minha vida.\n\nEu vou te amar para sempre. ♾️❤️");
+
+};
+
+}
